@@ -1,5 +1,5 @@
 {% extends 'layouts/form.html' %}
-{% block title %}Register{% endblock %}
+{% block title %}注册{% endblock %}
 {% block content %}
   <form method="post" class="form">
     <h3 class="form-heading">Register <a href="{{ url_for('home') }}" title="Back to homepage"><i class="fa fa-home pull-right"></i></a></h3>
@@ -9,6 +9,5 @@
     {{ form.confirm(class_ = 'form-control last-input', placeholder = form.confirm.label.text, required = true) }}
     <p class="pull-left"><a href="{{ url_for('login') }}">Login</a></p>
     <input type="submit" value="Register" class="btn btn-primary btn-lg btn-block" >
-    <p>You must add database as well as Flask-Login to enable user management. See the <a href="http://www.realpython.com">Real Python</a> course for more info!</p>
   </form>
 {% endblock %}

@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 #----------------------------------------------------------------------------#
 # Imports
 #----------------------------------------------------------------------------#
@@ -48,7 +50,11 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('pages/placeholder.about.html')
+    return render_template('pages/placeholder.about.html', app_name='STKB')
+
+@app.route('/editor')
+def editor():
+    return render_template('pages/editor.html', app_name='STKB')
 
 
 @app.route('/login')

@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//templates/errors/404.html=UTF-8
+encoding//templates/errors/500.html=UTF-8
+encoding//templates/forms/forgot.html=UTF-8
+encoding//templates/forms/login.html=UTF-8
+encoding//templates/forms/register.html=UTF-8
+encoding//templates/pages/editor.html=UTF-8
+encoding//templates/pages/placeholder.about.html=UTF-8
+encoding//templates/pages/placeholder.home.html=UTF-8
+encoding/<project>=UTF-8
+encoding/app.py=utf-8
+encoding/config.py=utf-8
+encoding/fabfile.py=utf-8
+encoding/forms.py=utf-8
+encoding/models.py=utf-8
