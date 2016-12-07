@@ -1,0 +1,38 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Python编辑器{% endblock %}
+{% block content %}
+
+
+<style type="text/css" media="screen">
+    #editor { 
+        height: 500px;
+        width: 50%;
+    }
+</style>
+
+<div id="editor">def foo(items) {
+    a = "All this is syntax highlighted";
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+    print a;
+}</div>
+    
+<script src="/static/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/python");
+</script>
+
+{% endblock %}
